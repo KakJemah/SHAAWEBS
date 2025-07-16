@@ -1,0 +1,123 @@
+<!doctype html>
+	<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>stray kids</title>
+<link href="css/skz.css" rel="stylesheet">
+</head>
+
+<body>
+	
+	  <nav class="navbar">
+    <div class="logo">
+      <img src="img/LOGO3.png" alt="Logo" class="logo-icon" />
+      <span class="logo-text">YEPPI</span>
+    </div>
+    
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <span class="divider">|</span>
+      <a href="abtme.htm">ABOUT ME</a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="menu" id="menu">
+      <a href="skz.html">STRAY KIDS</a>
+      <a href="ateez.html">ATEEZ</a>
+      <a href="bnd.html">BOYNEXTDOOR</a>
+      <a href="xdh.html">XDINARY HEROES</a>
+      <a href="txt.html">TXT</a>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('open');
+    }
+  </script>
+
+
+  <!-- Banner Image -->
+  <section class="banner">
+    <img src="img/skz/first.jpg" alt="Stray Kids Banner" class="banner-img">
+  </section>
+	
+		<section class="triple-images-wrapper">
+  <div class="title-stray">STRAY</div>
+  <div class="title-kids">KIDS</div>
+
+  <div class="triple-images">
+	  
+  <!-- 3 Images Below -->
+  <section class="triple-images">
+    <img src="img/skz/1.png" alt="img1" class="img1"/>
+    <img src="img/skz/poster 1.jpg" alt="img2" class="img2" />
+	  <img src="img/skz/Screenshot 2025-07-05 231535.png" alt="img3" class="img3" /> 
+  </section> 
+</div>
+	
+  <!-- RIGHT COLUMN: YOUR EXISTING CONTAINER -->
+  <div class="container">
+    <h1>MY FAV SONG</h1>
+
+    <div class="player-section">
+      <img src="img/skz/album1.jpg" alt="Album Cover" class="album-cover">
+
+      <div class="player-controls">
+        <h2>SORRY, I LOVE YOU</h2>
+        <h3>stray kids</h3>
+        <button class="play-btn" onclick="togglePlay()">▶ Play / ⏸ Pause</button>
+        <audio id="audio" src="img/skz/Stray Kids - 좋아해서 미안 (Sorry, I Love You) [Audio].mp3"></audio>
+      </div>
+
+      <img src="img/vinyl.png" alt="Vinyl Image" class="vinyl">
+    </div>
+
+    <div class="content-box">
+      <div class="lyrics">
+        Because you're too pretty to be friends<br>
+        친구로 지내기엔 너무 예뻐서<br><br>
+
+        It's too sad that we ended up being friends.<br>
+        친구로 끝내기엔 너무 아쉬워 괜히<br><br>
+
+        I was so sad that I finally expressed my feelings.<br>
+        너무 아쉬워서 결국 맘을 표현해<br><br>
+
+        It's too precious to just remain friends<br>
+        너무 아까워서 친구로만 남긴<br><br>
+
+        I love you so much that I'm dying<br>
+        내가 널 내가 좋아 죽겠는데<br><br>
+
+        I'm sorry if I like you, I'm sorry<br>
+        너를 좋아해서 미안, 미안<br>
+
+        <img src="img/skz/code.jpg" alt="Spotify Code" class="spotify-code">
+      </div>
+
+      <div class="paragraph">
+        I love this song, not just for the melody but because every lyric feels like it was written from the pages of my own life. Word by word, it echoes everything I’ve carried in silence. It’s about loving someone you were never supposed to love, someone who’s been by your side for nearly a decade, not as a lover but as a friend. And that’s the cruel part because in all those years, I never stopped feeling more. I pitied him, maybe for never knowing, but I pitied myself even more for holding onto this pain for so long. For smiling through it. For pretending friendship was enough when it never really was. And in the end, I remained where I started, invisible, just a friend.
+      </div>
+    </div>
+  </div>
+		<script>
+  function togglePlay() {
+    const audio = document.getElementById("audio");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>atz</title>
+<link href="css/atz.css" rel="stylesheet">
+</head>
+
+<body>
+	
+	  <nav class="navbar">
+    <div class="logo">
+      <img src="img/LOGO3.png" alt="Logo" class="logo-icon" />
+      <span class="logo-text">YEPPI</span>
+    </div>
+    
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <span class="divider">|</span>
+      <a href="abtme.htm">ABOUT ME</a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="menu" id="menu">
+      <a href="skz.html">STRAY KIDS</a>
+      <a href="ateez.html">ATEEZ</a>
+      <a href="bnd.html">BOYNEXTDOOR</a>
+      <a href="xdh.html">XDINARY HEROES</a>
+      <a href="txt.html">TXT</a>
+    </div>
+  </nav>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('open');
+    }
+  </script>
+
+
+  <!-- Banner Image -->
+  <section class="banner">
+    <img src="img/atz/banner1.jpg" alt="Stray Kids Banner" class="banner-img">
+  </section>
+	
+		<section class="triple-images-wrapper">
+  <div class="title-stray">ATEEZ</div>
+  <div class="title-kids"> >-< </div>
+
+  <div class="triple-images">
+	  
+  <!-- 3 Images Below -->
+  <section class="triple-images">
+    <img src="img/atz/2.png" alt="img1" class="img1"/>
+    <img src="img/atz/poster 1.jpg" alt="img2" class="img2" />
+	  <img src="img/atz/Screenshot 2025-07-14 143521.png" alt="img3" class="img3" /> 
+  </section> 
+</div>
+	  
+	   <!-- RIGHT COLUMN: YOUR EXISTING CONTAINER -->
+  <div class="container">
+    <h1>MY FAV SONG</h1>
+
+    <div class="player-section">
+      <img src="img/atz/f2.jpg" alt="Album Cover" class="album-cover">
+
+      <div class="player-controls">
+        <h2>CYBERPUNK</h2>
+        <h3>ateez</h3>
+        <button class="play-btn" onclick="togglePlay()">▶ Play / ⏸ Pause</button>
+        <audio id="audio" src="img/atz/ATEEZ (에이티즈) - CYBERPUNK Audio.mp3"></audio>
+      </div>
+
+      <img src="img/vinyl.png" alt="Vinyl Image" class="vinyl">
+    </div>
+
+    <div class="content-box">
+      <div class="lyrics">
+This place where I can’t feel anything is full of lies<br>
+무엇도 느낄 수 없는 이곳은 full of lies<br><br>
+
+This place where everyone is sleeping is a frozen night<br>
+모두가 잠들어 있는 이곳은 frozen night<br><br>
+
+I wanna feel alive<br>
+I wanna feel alive<br><br>
+
+Don't wanna stay in the dark<br>
+Don't wanna stay in the dark<br><br>
+
+This place where no one will be sad is full of lies<br>
+누구도 슬프지 않을 이곳은 full of lies<br><br>
+
+The night when no one smiles, this is a frozen night<br>
+아무도 웃지 않는 밤 이곳은 frozen night<br><br>
+
+        <img src="img/atz/code.jpg" alt="Spotify Code" class="spotify-code">
+      </div>
+
+      <div class="paragraph">
+        I love Cyberpunk because it feels like stepping into another world, dark, electric, and emotionally charged. The moment the song starts, it wraps you in this neon-lit atmosphere, like you're walking through a futuristic city filled with secrets and pain. The heavy synths and layered vocals create this sense of isolation and longing, yet there’s strength in it too, like pushing forward even when everything feels mechanical and broken. The lyrics speak to a kind of emotional numbness and rebellion, something that hits deep when you're trying to survive in a world that feels cold and unfeeling. It’s not just a song. It’s an experience, one that makes you feel seen when you’re stuck in your own quiet battles. ATEEZ didn’t just make music with Cyberpunk, they built an entire feeling.
+      </div>
+    </div>
+  </div>
+
+	  <script>
+  function togglePlay() {
+    const audio = document.getElementById("audio");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
+			
+</body>
+</html>

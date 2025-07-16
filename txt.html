@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>txt</title>
+	<link href="css/txt.css" rel="stylesheet">
+</head>
+
+<body>
+	
+	  <nav class="navbar">
+    <div class="logo">
+      <img src="img/LOGO3.png" alt="Logo" class="logo-icon" />
+      <span class="logo-text">YEPPI</span>
+    </div>
+    
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <span class="divider">|</span>
+      <a href="abtme.htm">ABOUT ME</a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="menu" id="menu">
+      <a href="skz.html">STRAY KIDS</a>
+      <a href="ateez.html">ATEEZ</a>
+      <a href="bnd.html">BOYNEXTDOOR</a>
+      <a href="xdh.html">XDINARY HEROES</a>
+      <a href="txt.html">TXT</a>
+    </div>
+  </nav>
+	
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('open');
+    }
+  </script>
+
+
+  <!-- Banner Image -->
+  <section class="banner">
+    <img src="img/txt/banner2.jpg" alt="Stray Kids Banner" class="banner-img">
+  </section>
+	<section class="triple-images-wrapper">
+  <div class="title-stray">TOMORROW BY </div>
+  <div class="title-kids">TOGETHER</div>
+
+  <div class="triple-images">
+	  
+  <!-- 3 Images Below -->
+  <section class="triple-images">
+    <img src="img/xdh/4.png" alt="img1" class="img1"/>
+    <img src="img/txt/poster 1.jpg" alt="img2" class="img2" />
+	  <img src="img/txt/Screenshot 2025-07-14 142826.png" alt="img3" class="img3" /> 
+  </section> 
+</div>
+		  <!-- RIGHT COLUMN: YOUR EXISTING CONTAINER -->
+  <div class="container">
+    <h1>MY FAV SONG</h1>
+
+    <div class="player-section">
+      <img src="img/txt/album3.jpg" alt="Album Cover" class="album-cover">
+
+      <div class="player-controls">
+        <h2>I KNOW I LOVE YOU</h2>
+        <h3>tomorrow by together</h3>
+        <button class="play-btn" onclick="togglePlay()">▶ Play / ⏸ Pause</button>
+        <audio id="audio" src="img/txt/TXT- 0X1LOVESONG(I know I love you)Feat. Seori (Audio).mp3"></audio>
+      </div>
+
+      <img src="img/vinyl.png" alt="Vinyl Image" class="vinyl">
+    </div>
+
+    <div class="content-box">
+      <div class="lyrics">
+Flesh grows on my holey soul<br>
+구멍 난 영혼에 살이 돋아<br><br>
+
+The cold atmosphere is melting<br>
+추운 대기가 녹아가<br><br>
+
+In the world of zero<br>
+제로의 세계 속에<br><br>
+
+The warmth that I found called you<br>
+찾아낸 너라는 온기<br><br>
+
+Take everything from me<br>
+내 모두를 거둬가<br><br>
+
+Girl, I need you<br>
+Girl, I need you<br><br>
+
+        <img src="img/txt/code.jpg" alt="Spotify Code" class="spotify-code">
+      </div>
+
+      <div class="paragraph">
+       I love I Know I Love You because it feels like a cry from the depths of loneliness, wrapped in raw emotion and teenage desperation. The moment Seori’s haunting voice opens the song, it instantly pulls me into this cold, chaotic world that TXT paints, a place where everything feels meaningless except for one person. The lyrics are simple but powerful, like “In this world of zero, I know you're my one and only”, and that line hits especially hard when you’ve ever felt like you were drowning but someone became your reason to breathe. The rock-influenced sound adds this wild, messy energy that mirrors the chaos inside, making it feel so real and relatable. It’s a love song, yes, but it’s also a song about survival, about clinging to something pure in a world that feels broken. And that’s why I keep coming back to it. It understands the kind of love that saves you.
+
+
+      </div>
+    </div>
+  </div>
+		
+		<script>
+  function togglePlay() {
+    const audio = document.getElementById("audio");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
+		
+</body>
+</html>

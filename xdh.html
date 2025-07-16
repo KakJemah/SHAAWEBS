@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>xdh</title>
+	<link href="css/xdh.css" rel="stylesheet">
+</head>
+
+<body>
+	
+	  <nav class="navbar">
+    <div class="logo">
+      <img src="img/LOGO3.png" alt="Logo" class="logo-icon" />
+      <span class="logo-text">YEPPI</span>
+    </div>
+    
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <span class="divider">|</span>
+      <a href="abtme.htm">ABOUT ME</a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="menu" id="menu">
+      <a href="skz.html">STRAY KIDS</a>
+      <a href="ateez.html">ATEEZ</a>
+      <a href="bnd.html">BOYNEXTDOOR</a>
+      <a href="xdh.html">XDINARY HEROES</a>
+      <a href="txt.html">TXT</a>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('open');
+    }
+  </script>
+
+
+  <!-- Banner Image -->
+  <section class="banner">
+    <img src="img/xdh/banner1.jpg" alt="Stray Kids Banner" class="banner-img">
+  </section>
+	
+		<section class="triple-images-wrapper">
+  <div class="title-stray">XDINARY</div>
+  <div class="title-kids">HEROES</div>
+
+  <div class="triple-images">
+	  
+  <!-- 3 Images Below -->
+  <section class="triple-images">
+    <img src="img/txt/5.png" alt="img1" class="img1"/>
+    <img src="img/xdh/poster 1.jpg" alt="img2" class="img2" />
+	  <img src="img/xdh/Screenshot 2025-07-14 143714.png" alt="img3" class="img3" /> 
+  </section> 
+</div>
+		  <!-- RIGHT COLUMN: YOUR EXISTING CONTAINER -->
+  <div class="container">
+    <h1>MY FAV SONG</h1>
+
+    <div class="player-section">
+      <img src="img/xdh/album2.jpg" alt="Album Cover" class="album-cover">
+
+      <div class="player-controls">
+        <h2>DREAMING GIRL</h2>
+        <h3>xdinary heroes</h3>
+        <button class="play-btn" onclick="togglePlay()">▶ Play / ⏸ Pause</button>
+        <audio id="audio" src="img/xdh/Xdinary Heroes (엑스디너리 히어로즈) '꿈을 꾸는 소녀 Dreaming Girl' Official Audio.mp3"></audio>
+      </div>
+
+      <img src="img/vinyl.png" alt="Vinyl Image" class="vinyl">
+    </div>
+
+    <div class="content-box">
+      <div class="lyrics">
+“Mom, I really want to do well. <br>
+"엄마 진짜 잘 해내고 싶은데<br><br>
+
+“Nothing is working.”<br>
+뭐 하나 되는 일이 없네요"<br><br>
+
+“This is where I really chased my dream.<br>
+"정말 꿈을 좇아온 이곳은 너무<br><br>
+
+It's cold, but I'll hold on."<br>
+차갑지만 그래도 버텨 볼게요"<br><br>
+		  
+I believe we will overcome it all<br>
+다 이겨 낼 거라고 믿어요<br><br>
+
+Girl whose dreams are too beautiful to lose<br>
+져 버리기엔 너무 아름다운 꿈을 꾸는 소녀여<br><br>
+
+        <img src="img/xdh/code.jpg" alt="Spotify Code" class="spotify-code">
+      </div>
+
+      <div class="paragraph">
+        I love Dreaming Girl because it feels like a soft confession hidden in a melody. Unlike their usual bold, intense sound, this song has a gentler rhythm, almost like a lullaby for the heart. The lyrics speak of longing and admiration, of someone watching from afar and hoping their feelings will somehow reach the person they care about. There’s a bittersweet ache in it, the kind that reminds you of quiet crushes, late-night thoughts, and unspoken words. It makes me think of the people we hold close in our dreams but not in real life. And maybe that’s why it hits so deeply—it captures that quiet kind of love, the one that stays even when nothing is said out loud. Dreaming Girl isn’t loud, but it leaves a lasting echo in the heart.
+    </div>
+  </div>
+	  
+	  	<script>
+  function togglePlay() {
+    const audio = document.getElementById("audio");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
+	  
+</body>
+</html>

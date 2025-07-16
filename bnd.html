@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>bnd</title>
+	<link href="css/bnd.css" rel="stylesheet">
+</head>
+
+<body>
+	
+	  <nav class="navbar">
+    <div class="logo">
+      <img src="img/LOGO3.png" alt="Logo" class="logo-icon" />
+      <span class="logo-text">YEPPI</span>
+    </div>
+    
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <span class="divider">|</span>
+      <a href="abtme.htm">ABOUT ME</a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="menu" id="menu">
+      <a href="skz.html">STRAY KIDS</a>
+      <a href="ateez.html">ATEEZ</a>
+      <a href="bnd.html">BOYNEXTDOOR</a>
+      <a href="xdh.html">XDINARY HEROES</a>
+      <a href="txt.html">TXT</a>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('open');
+    }
+  </script>
+
+
+  <!-- Banner Image -->
+  <section class="banner">
+    <img src="img/bonedo/banner1.png" alt="Stray Kids Banner" class="banner-img">
+  </section>
+	
+		<section class="triple-images-wrapper">
+  <div class="title-stray">BOYNEXT</div>
+  <div class="title-kids">DOOR</div>
+
+  <div class="triple-images">
+	  
+  <!-- 3 Images Below -->
+  <section class="triple-images">
+    <img src="img/bonedo/3.png" alt="img1" class="img1"/>
+    <img src="img/bonedo/poster 1.jpg" alt="img2" class="img2" />
+	  <img src="img/bonedo/Screenshot 2025-07-14 143902.png" alt="img3" class="img3" /> 
+  </section> 
+</div>
+			
+			 <!-- RIGHT COLUMN: YOUR EXISTING CONTAINER -->
+  <div class="container">
+    <h1>MY FAV SONG</h1>
+
+    <div class="player-section">
+      <img src="img/bonedo/f1.jpg" alt="Album Cover" class="album-cover">
+
+      <div class="player-controls">
+        <h2>BUT SOMETIMES</h2>
+        <h3>boynextdoor</h3>
+        <button class="play-btn" onclick="togglePlay()">▶ Play / ⏸ Pause</button>
+        <audio id="audio" src="img/bonedo/BOYNEXTDOOR - 뭣 같아 (But Sometimes) [Audio].mp3"></audio>
+      </div>
+
+      <img src="img/vinyl.png" alt="Vinyl Image" class="vinyl">
+    </div>
+
+    <div class="content-box">
+      <div class="lyrics">
+But you <br>
+근데 넌<br><br>
+
+Mascara smeared from crying every day<br>
+매일 운다고 번진 마스카라에<br><br>
+
+When I hit the ground, I feel so empty inside.<br>
+땅을 친다고 기분이 참 속이 뚫려 뻥<br><br>
+		  
+Oh, I could've died for you<br>
+Oh, I could've died for you<br><br>
+
+Finally you<br>
+이제서야 넌<br><br>
+
+Oh, does it seem like a waste? Why are you selfish?<br>
+Oh, 아까운 것 같니? Why are you selfish?<br><br>
+
+        <img src="img/bonedo/code.jpg" alt="Spotify Code" class="spotify-code">
+      </div>
+
+      <div class="paragraph">
+        I love But Sometimes because it captures emotions I never quite knew how to express out loud. The line "Mascara smeared from crying every day" speaks so vividly to the quiet, messy heartbreak—the kind you try to hide but shows anyway. It’s more than just sadness; it’s exhaustion from feeling too much. "When I hit the ground, I feel so empty inside" echoes the hollowness I’ve felt after being let down over and over, like all the pain led to nothing but silence. And when they sing "Oh, I could’ve died for you", it strikes something deep in me. That kind of love, selfless, painful, almost foolish, is so real. The line "Oh, does it seem like a waste? Why are you selfish?" feels like finally confronting someone who took everything from you without realizing what they meant to you. This song doesn’t just sound beautiful. It hurts beautifully. And sometimes that’s exactly what I need to hear.
+
+
+      </div>
+    </div>
+  </div>
+			
+<script>
+  function togglePlay() {
+    const audio = document.getElementById("audio");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
+			
+</body>
+</html>
