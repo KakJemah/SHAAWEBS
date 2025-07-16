@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', monospace;
+  background-color: #0a0f2c;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  font-family: 'Press Start 2P', monospace;
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.nav-links {
+  display: flex;
+  margin-left: 830px;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.divider {
+  font-weight: lighter;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 2px;
+  background-color: black;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 15px;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.menu a {
+  display: block;
+  padding: 8px 0;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu.open {
+  display: flex;
+}
+
+/* Banner */
+.banner-img {
+  width: 99vw;
+  height: 99vh;
+  object-fit: cover;
+  display: block;
+}
+
+/* Triple Image Section */
+.triple-images {
+  position: relative;
+  height: 700px; /* Increased from 500px */
+  margin: 80px 0;
+}
+
+.triple-images .img1 {
+  position: absolute;
+  top: 10px;
+  left: 150px;
+  width: 730px;
+  z-index: 1;
+}
+
+.triple-images .img2 {
+  position: absolute;
+  top: 220px;
+  left: 180px;
+  width: 340px;
+  z-index: 2;
+}
+
+.triple-images .img3 {
+  position: absolute;
+  top: 90px;
+  left: 480px;
+  width: 750px;
+  z-index: 3;
+}
+
+/* Spacer below triple image */
+.triple-spacer {
+  height: 150px; /* You can adjust this further */
+}
+
+/* Titles */
+.title-stray {
+  position: absolute;
+  top: 880px;
+  left: 71.4%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  letter-spacing: 8px;
+  z-index: 5;
+}
+
+.title-kids {
+  position: absolute;
+  top: 1120px;
+  right: 240px;
+  margin-top: 100px;
+  transform: rotate(90deg);
+  transform-origin: right top;
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+  color: #ff4b91;
+  letter-spacing: 8px;
+  z-index: 5;
+}
+
+.title-section h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+
+.title-section span {
+  color: #ff4b91;
+}
+
+   .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    h1 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 2rem;
+  color: #f5f5f5; /* bright neon blue */
+  text-align: center;
+  text-shadow:
+    2px 2px 0 #001f33,   /* sharp drop shadow */
+    0 0 2px #00bfff,     /* subtle inner glow */
+    0 0 5px #00bfff;     /* slight neon edge */
+  margin-top: 50px;
+  letter-spacing: 2px;
+    }
+
+    .player-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      background-color: #a8a3b7;
+      padding: 30px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .album-cover {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .player-controls {
+      text-align: center;
+    }
+
+    .player-controls h2 {
+      margin: 10px 0 5px;
+    }
+
+    .player-controls h3 {
+      margin: 0 0 20px;
+      font-weight: normal;
+      font-size: 16px;
+      color: #5f5b78;
+    }
+
+    .play-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #6E6565;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .play-btn:hover {
+      background-color: #c63c43;
+    }
+
+    .vinyl {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #444;
+    }
+
+    .content-box {
+      margin-top: 40px;
+      display: flex;
+      background-color: #a8a3b7;
+      padding: 30px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 1000px;
+      gap: 0px;
+    }
+
+    .lyrics {
+      flex: 1;
+      font-size: 14px;
+      white-space: pre-line;
+      line-height: 1.0;
+	  word-spacing: 4px;
+	  font-family: 'Space Grotesk', sans-serif;
+	  color: 	#2a2a2a;
+    }
+
+    .spotify-code {
+      margin-top: 10px;
+      width: 300px;
+    }
+
+    .paragraph {
+      flex: 1;
+      font-size: 14px;
+      line-height: 1.6; 
+	  margin-top: 20px;
+	
+    }
